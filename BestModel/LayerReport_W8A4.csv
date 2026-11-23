@@ -1,0 +1,142 @@
+activation_bits,activation_fp32_bytes_per_sample,activation_ideal_packed_bytes_per_sample,activation_scale,activation_status,activation_stored_bytes_per_sample,layer,layer_type,status,weight_bits,weight_elements,weight_fp32_bytes,weight_packed_bytes,weight_scale_bytes,weight_shape
+4,131072,16384,0.13016556203365326,real int8 container (QActivation),32768,features.0.0,Conv2d,weight quantized (per-output-channel) - sensitive-layer exception,8,864,3456,864,64,"[32, 3, 3, 3]"
+N/A,,,,n/a,,features.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,131072,16384,0.15332734755107333,real int8 container (QActivation),32768,features.1.conv.0.0,Conv2d,weight quantized (per-output-channel),8,288,1152,288,64,"[32, 1, 3, 3]"
+N/A,,,,n/a,,features.1.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.1.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,65536,8192,0.14729552013533456,real int8 container (QActivation),16384,features.1.conv.1,Conv2d,weight quantized (per-output-channel),8,512,2048,512,32,"[16, 32, 1, 1]"
+N/A,,,,n/a,,features.1.conv.2,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,393216,49152,0.10965461071048464,real int8 container (QActivation),98304,features.2.conv.0.0,Conv2d,weight quantized (per-output-channel),8,1536,6144,1536,192,"[96, 16, 1, 1]"
+N/A,,,,n/a,,features.2.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.2.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,98304,12288,0.11731057060616357,real int8 container (QActivation),24576,features.2.conv.1.0,Conv2d,weight quantized (per-output-channel),8,864,3456,864,192,"[96, 1, 3, 3]"
+N/A,,,,n/a,,features.2.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.2.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,24576,3072,0.11421022840908594,real int8 container (QActivation),6144,features.2.conv.2,Conv2d,weight quantized (per-output-channel),8,2304,9216,2304,48,"[24, 96, 1, 1]"
+N/A,,,,n/a,,features.2.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,147456,18432,0.05415587584887232,real int8 container (QActivation),36864,features.3.conv.0.0,Conv2d,weight quantized (per-output-channel),8,3456,13824,3456,288,"[144, 24, 1, 1]"
+N/A,,,,n/a,,features.3.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.3.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,147456,18432,0.08959720326321466,real int8 container (QActivation),36864,features.3.conv.1.0,Conv2d,weight quantized (per-output-channel),8,1296,5184,1296,288,"[144, 1, 3, 3]"
+N/A,,,,n/a,,features.3.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.3.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,24576,3072,0.11607575352702823,real int8 container (QActivation),6144,features.3.conv.2,Conv2d,weight quantized (per-output-channel),8,3456,13824,3456,48,"[24, 144, 1, 1]"
+N/A,,,,n/a,,features.3.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,147456,18432,0.07046451728258814,real int8 container (QActivation),36864,features.4.conv.0.0,Conv2d,weight quantized (per-output-channel),8,3456,13824,3456,288,"[144, 24, 1, 1]"
+N/A,,,,n/a,,features.4.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.4.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,36864,4608,0.10531864102397646,real int8 container (QActivation),9216,features.4.conv.1.0,Conv2d,weight quantized (per-output-channel),8,1296,5184,1296,288,"[144, 1, 3, 3]"
+N/A,,,,n/a,,features.4.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.4.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,8192,1024,0.12236257727657045,real int8 container (QActivation),2048,features.4.conv.2,Conv2d,weight quantized (per-output-channel),8,4608,18432,4608,64,"[32, 144, 1, 1]"
+N/A,,,,n/a,,features.4.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,49152,6144,0.04896020005856242,real int8 container (QActivation),12288,features.5.conv.0.0,Conv2d,weight quantized (per-output-channel),8,6144,24576,6144,384,"[192, 32, 1, 1]"
+N/A,,,,n/a,,features.5.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.5.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,49152,6144,0.07551887184381485,real int8 container (QActivation),12288,features.5.conv.1.0,Conv2d,weight quantized (per-output-channel),8,1728,6912,1728,384,"[192, 1, 3, 3]"
+N/A,,,,n/a,,features.5.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.5.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,8192,1024,0.09271375238895417,real int8 container (QActivation),2048,features.5.conv.2,Conv2d,weight quantized (per-output-channel),8,6144,24576,6144,64,"[32, 192, 1, 1]"
+N/A,,,,n/a,,features.5.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,49152,6144,0.04926952783550535,real int8 container (QActivation),12288,features.6.conv.0.0,Conv2d,weight quantized (per-output-channel),8,6144,24576,6144,384,"[192, 32, 1, 1]"
+N/A,,,,n/a,,features.6.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.6.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,49152,6144,0.07028059054698263,real int8 container (QActivation),12288,features.6.conv.1.0,Conv2d,weight quantized (per-output-channel),8,1728,6912,1728,384,"[192, 1, 3, 3]"
+N/A,,,,n/a,,features.6.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.6.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,8192,1024,0.09563031239168984,real int8 container (QActivation),2048,features.6.conv.2,Conv2d,weight quantized (per-output-channel),8,6144,24576,6144,64,"[32, 192, 1, 1]"
+N/A,,,,n/a,,features.6.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,49152,6144,0.05973603501915931,real int8 container (QActivation),12288,features.7.conv.0.0,Conv2d,weight quantized (per-output-channel),8,6144,24576,6144,384,"[192, 32, 1, 1]"
+N/A,,,,n/a,,features.7.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.7.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,12288,1536,0.10390953868627549,real int8 container (QActivation),3072,features.7.conv.1.0,Conv2d,weight quantized (per-output-channel),8,1728,6912,1728,384,"[192, 1, 3, 3]"
+N/A,,,,n/a,,features.7.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.7.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,4096,512,0.11399843309606825,real int8 container (QActivation),1024,features.7.conv.2,Conv2d,weight quantized (per-output-channel),8,12288,49152,12288,128,"[64, 192, 1, 1]"
+N/A,,,,n/a,,features.7.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,24576,3072,0.04222584877695356,real int8 container (QActivation),6144,features.8.conv.0.0,Conv2d,weight quantized (per-output-channel),8,24576,98304,24576,768,"[384, 64, 1, 1]"
+N/A,,,,n/a,,features.8.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.8.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,24576,3072,0.053487079164811546,real int8 container (QActivation),6144,features.8.conv.1.0,Conv2d,weight quantized (per-output-channel),8,3456,13824,3456,768,"[384, 1, 3, 3]"
+N/A,,,,n/a,,features.8.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.8.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,4096,512,0.06254010455948966,real int8 container (QActivation),1024,features.8.conv.2,Conv2d,weight quantized (per-output-channel),8,24576,98304,24576,128,"[64, 384, 1, 1]"
+N/A,,,,n/a,,features.8.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,24576,3072,0.043871858290263584,real int8 container (QActivation),6144,features.9.conv.0.0,Conv2d,weight quantized (per-output-channel),8,24576,98304,24576,768,"[384, 64, 1, 1]"
+N/A,,,,n/a,,features.9.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.9.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,24576,3072,0.04988362938165664,real int8 container (QActivation),6144,features.9.conv.1.0,Conv2d,weight quantized (per-output-channel),8,3456,13824,3456,768,"[384, 1, 3, 3]"
+N/A,,,,n/a,,features.9.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.9.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,4096,512,0.05584218172090394,real int8 container (QActivation),1024,features.9.conv.2,Conv2d,weight quantized (per-output-channel),8,24576,98304,24576,128,"[64, 384, 1, 1]"
+N/A,,,,n/a,,features.9.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,24576,3072,0.04506266415119171,real int8 container (QActivation),6144,features.10.conv.0.0,Conv2d,weight quantized (per-output-channel),8,24576,98304,24576,768,"[384, 64, 1, 1]"
+N/A,,,,n/a,,features.10.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.10.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,24576,3072,0.04724222187485013,real int8 container (QActivation),6144,features.10.conv.1.0,Conv2d,weight quantized (per-output-channel),8,3456,13824,3456,768,"[384, 1, 3, 3]"
+N/A,,,,n/a,,features.10.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.10.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,4096,512,0.06551261448434421,real int8 container (QActivation),1024,features.10.conv.2,Conv2d,weight quantized (per-output-channel),8,24576,98304,24576,128,"[64, 384, 1, 1]"
+N/A,,,,n/a,,features.10.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,24576,3072,0.05344100786106927,real int8 container (QActivation),6144,features.11.conv.0.0,Conv2d,weight quantized (per-output-channel),8,24576,98304,24576,768,"[384, 64, 1, 1]"
+N/A,,,,n/a,,features.11.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.11.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,24576,3072,0.07422269220863069,real int8 container (QActivation),6144,features.11.conv.1.0,Conv2d,weight quantized (per-output-channel),8,3456,13824,3456,768,"[384, 1, 3, 3]"
+N/A,,,,n/a,,features.11.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.11.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,6144,768,0.06924512056367738,real int8 container (QActivation),1536,features.11.conv.2,Conv2d,weight quantized (per-output-channel),8,36864,147456,36864,192,"[96, 384, 1, 1]"
+N/A,,,,n/a,,features.11.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,36864,4608,0.0430414338197027,real int8 container (QActivation),9216,features.12.conv.0.0,Conv2d,weight quantized (per-output-channel),8,55296,221184,55296,1152,"[576, 96, 1, 1]"
+N/A,,,,n/a,,features.12.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.12.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,36864,4608,0.0369302433516298,real int8 container (QActivation),9216,features.12.conv.1.0,Conv2d,weight quantized (per-output-channel),8,5184,20736,5184,1152,"[576, 1, 3, 3]"
+N/A,,,,n/a,,features.12.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.12.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,6144,768,0.048719922027417595,real int8 container (QActivation),1536,features.12.conv.2,Conv2d,weight quantized (per-output-channel),8,55296,221184,55296,192,"[96, 576, 1, 1]"
+N/A,,,,n/a,,features.12.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,36864,4608,0.04567906675594193,real int8 container (QActivation),9216,features.13.conv.0.0,Conv2d,weight quantized (per-output-channel),8,55296,221184,55296,1152,"[576, 96, 1, 1]"
+N/A,,,,n/a,,features.13.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.13.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,36864,4608,0.03672394571559769,real int8 container (QActivation),9216,features.13.conv.1.0,Conv2d,weight quantized (per-output-channel),8,5184,20736,5184,1152,"[576, 1, 3, 3]"
+N/A,,,,n/a,,features.13.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.13.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,6144,768,0.04865337173853602,real int8 container (QActivation),1536,features.13.conv.2,Conv2d,weight quantized (per-output-channel),8,55296,221184,55296,192,"[96, 576, 1, 1]"
+N/A,,,,n/a,,features.13.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,36864,4608,0.04695597620947021,real int8 container (QActivation),9216,features.14.conv.0.0,Conv2d,weight quantized (per-output-channel),8,55296,221184,55296,1152,"[576, 96, 1, 1]"
+N/A,,,,n/a,,features.14.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.14.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,9216,1152,0.04468738947595869,real int8 container (QActivation),2304,features.14.conv.1.0,Conv2d,weight quantized (per-output-channel),8,5184,20736,5184,1152,"[576, 1, 3, 3]"
+N/A,,,,n/a,,features.14.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.14.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,2560,320,0.03978329795811857,real int8 container (QActivation),640,features.14.conv.2,Conv2d,weight quantized (per-output-channel),8,92160,368640,92160,320,"[160, 576, 1, 1]"
+N/A,,,,n/a,,features.14.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,15360,1920,0.0402884844158377,real int8 container (QActivation),3840,features.15.conv.0.0,Conv2d,weight quantized (per-output-channel),8,153600,614400,153600,1920,"[960, 160, 1, 1]"
+N/A,,,,n/a,,features.15.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.15.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,15360,1920,0.02310535412813936,real int8 container (QActivation),3840,features.15.conv.1.0,Conv2d,weight quantized (per-output-channel),8,8640,34560,8640,1920,"[960, 1, 3, 3]"
+N/A,,,,n/a,,features.15.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.15.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,2560,320,0.019642151173736366,real int8 container (QActivation),640,features.15.conv.2,Conv2d,weight quantized (per-output-channel),8,153600,614400,153600,320,"[160, 960, 1, 1]"
+N/A,,,,n/a,,features.15.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,15360,1920,0.03899208073105131,real int8 container (QActivation),3840,features.16.conv.0.0,Conv2d,weight quantized (per-output-channel),8,153600,614400,153600,1920,"[960, 160, 1, 1]"
+N/A,,,,n/a,,features.16.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.16.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,15360,1920,0.025654308604342597,real int8 container (QActivation),3840,features.16.conv.1.0,Conv2d,weight quantized (per-output-channel),8,8640,34560,8640,1920,"[960, 1, 3, 3]"
+N/A,,,,n/a,,features.16.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.16.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,2560,320,0.021287518526826588,real int8 container (QActivation),640,features.16.conv.2,Conv2d,weight quantized (per-output-channel),8,153600,614400,153600,320,"[160, 960, 1, 1]"
+N/A,,,,n/a,,features.16.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,15360,1920,0.06093415947897094,real int8 container (QActivation),3840,features.17.conv.0.0,Conv2d,weight quantized (per-output-channel),8,153600,614400,153600,1920,"[960, 160, 1, 1]"
+N/A,,,,n/a,,features.17.conv.0.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.17.conv.0.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,15360,1920,0.11565278662102563,real int8 container (QActivation),3840,features.17.conv.1.0,Conv2d,weight quantized (per-output-channel),8,8640,34560,8640,1920,"[960, 1, 3, 3]"
+N/A,,,,n/a,,features.17.conv.1.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.17.conv.1.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+4,5120,640,0.01727844803993191,real int8 container (QActivation),1280,features.17.conv.2,Conv2d,weight quantized (per-output-channel),8,307200,1228800,307200,640,"[320, 960, 1, 1]"
+N/A,,,,n/a,,features.17.conv.3,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+4,20480,2560,0.05265982310686793,real int8 container (QActivation),5120,features.18.0,Conv2d,weight quantized (per-output-channel),8,409600,1638400,409600,2560,"[1280, 320, 1, 1]"
+N/A,,,,n/a,,features.18.1,BatchNorm2d,folded into preceding conv (no memory kept),N/A,0,,,,[]
+32,,,,not quantized by this implementation,,features.18.2,ReLU6,no quantizable weights,N/A,0,,,,[]
+32,,,,not quantized by this implementation,,classifier.0,Dropout,no quantizable weights,N/A,0,,,,[]
+4,40,5,0.5853093743324279,real int8 container (QActivation),10,classifier.1,Linear,weight quantized (per-output-channel) - sensitive-layer exception,8,12800,51200,12800,20,"[10, 1280]"
